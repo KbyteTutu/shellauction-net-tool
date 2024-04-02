@@ -11,6 +11,9 @@
 from flask import Flask
 from search_engine import search_engine
 
+
+
+
 app = Flask(__name__)
 app.register_blueprint(search_engine, url_prefix="/search/")
 
@@ -21,4 +24,4 @@ def home():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=True,port=8080,host='0.0.0.0')
