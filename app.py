@@ -17,7 +17,7 @@ app.register_blueprint(search_engine, url_prefix="/search/")
 
 @app.route("/")
 def home():
-    return "欢迎来到我的Flask网站!"
+    return "欢迎来到我的Flask网站!!"
 
 
 if __name__ == "__main__":
